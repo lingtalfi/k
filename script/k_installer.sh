@@ -27,6 +27,8 @@ if [ ! -d "$kDir" ]; then
     
     /bin/cat <<EOM >k_aliases.sh
     
+#!/bin/bash
+    
 #-------------------------------------
 # K NATIVE ALIASES
 #-------------------------------------
@@ -64,6 +66,7 @@ EOM
     
     /bin/cat <<EOM >k_functions.sh
     
+#!/bin/bash    
 mcd () { mkdir -p "$1" && cd "$1"; }
 
 path(){
@@ -74,6 +77,16 @@ importconf (){
     # todo: import ling's tmux or ling's git confs
 }
 
+EOM
+    
+    /bin/cat <<EOM >k_environment_variables.sh
+    
+#!/bin/bash
+EOM
+
+    /bin/cat <<EOM >k_sources.sh
+    
+#!/bin/bash
 EOM
 
 
