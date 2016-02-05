@@ -77,18 +77,18 @@ importconf (){
 EOM
 
 
-
+    cd "pwd"
 
     #----------------------------------------
     # APPEND TO THE .bashrc FILE 
     # only if .bashrc exists (ensure the user is in a user's home directory) 
     # AND the k stuff is not there already
     #----------------------------------------
-    if [ -f "$pwd/.bashrc" ]; then
+    if [ -f ".bashrc" ]; then
 
-        if ! grep -q "# kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" "$pwd/.bashrc"; then
+        if ! grep -q "# kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" ".bashrc"; then
         
-            cat >>"$pwd/.bashrc" <<EOF
+            cat >>".bashrc" <<EOF
     
 # kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
 #  	 ____ 
@@ -107,6 +107,12 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
     
     
 EOF
+            
+            . ".k/k_aliases.sh"            
+            . ".k/k_functions.sh"            
+            . ".k/k_environment_variables.sh"            
+            . ".k/k_sources.sh"            
+            
             
         fi
     fi

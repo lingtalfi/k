@@ -30,19 +30,19 @@ Go to your home directory, then call the install url
 
 ```bash
 cd
-source <(curl -s https://github.com/lingtalfi/k/blob/master/script/k_installer.sh)
+source <(curl -s https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh)
 
 # alternative using nano as the default editor instead of vim
-curl -s https://github.com/lingtalfi/k/blob/master/script/k_installer.sh | bash /dev/stdin nano
+curl -s https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh | bash /dev/stdin nano
 
 # alternative using open (mac) as the default editor instead of vim
-curl -s https://github.com/lingtalfi/k/blob/master/script/k_installer.sh | bash /dev/stdin open
+curl -s https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh | bash /dev/stdin open
 
 # wget alternative 
-bash <(wget -qO- https://github.com/lingtalfi/k/blob/master/script/k_installer.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh)
 
 # wget alternative using nano as the default editor instead of vim
-wget -qO- https://github.com/lingtalfi/k/blob/master/script/k_installer.sh | bash -s -- nano
+wget -qO- https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh | bash -s -- nano
 ```
 
 To see what this does, see the "k structure" section below.
