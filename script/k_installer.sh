@@ -77,7 +77,7 @@ importconf (){
 EOM
 
 
-    cd "pwd"
+    cd "$pwd"
 
     #----------------------------------------
     # APPEND TO THE .bashrc FILE 
