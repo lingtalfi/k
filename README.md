@@ -208,7 +208,14 @@ importconf (){
 
 
 
+History Log
+------------------
+    
+- 1.0.0 -- 2016-02-06
 
+    - initial commit
+    
+    
 
 
 
