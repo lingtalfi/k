@@ -195,14 +195,22 @@ k native functions
 ```bash 
 mcd () { mkdir -p "$1" && cd "$1"; }
 
-path(){
+path () {
   echo $PATH | tr ':' '\n' | xargs ls -ld 
 }
 
-importconf (){
+importconf () {
     # todo: import ling's tmux or ling's git confs
 }
 ```
+
+
+
+
+Ideas
+---------
+
+Create a native function that copies the k dir to another user's home directory (and configure the .bashrc)
 
 
 
