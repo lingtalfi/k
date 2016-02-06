@@ -72,6 +72,10 @@ path () {
     echo $PATH | tr ':' '\n' | xargs ls -ld 
 }
 
+importconf () { 
+    # todo: import ling's tmux and git confs 
+}
+
 
 EOM
     
