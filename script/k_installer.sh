@@ -32,8 +32,8 @@ if [ ! -d "$kDir" ]; then
 #-------------------------------------
 # K NATIVE ALIASES
 #-------------------------------------
-alias kalias='$editor ~/.k/k_alias.sh'
-alias kaliass='. ~/.k/k_alias.sh'
+alias kalias='$editor ~/.k/k_aliases.sh'
+alias kaliass='. ~/.k/k_aliases.sh'
 alias kfunc='$editor ~/.k/k_functions.sh'
 alias kfuncs='. ~/.k/k_functions.sh'
 alias kenv='$editor ~/.k/k_environment_variables.sh'
