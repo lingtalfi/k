@@ -116,10 +116,10 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
     
 EOF
             
-            . ".k/k_aliases.sh"            
-            . ".k/k_functions.sh"            
-            . ".k/k_environment_variables.sh"            
-            . ".k/k_sources.sh"            
+            source ".k/k_aliases.sh"            
+            source ".k/k_functions.sh"            
+            source ".k/k_environment_variables.sh"            
+            source ".k/k_sources.sh"            
             
             
         fi
