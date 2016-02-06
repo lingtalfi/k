@@ -15,6 +15,7 @@ Features
 - creating new functions is easy
 - adding new environment variables is easy
 - adding new sources is easy 
+- since 1.1.0, ships with [bashmarks](https://github.com/huyng/bashmarks)
 
 
 That's it.
@@ -25,8 +26,7 @@ That's it.
 How to use
 ---------------
 
-Go to your home directory, then call the install url
-(you need curl or wget installed to run the following example, just choose one)
+Go to your home directory, then call one of the install url below
 
 ```bash
 cd
@@ -92,6 +92,17 @@ content in it:
 
 
 As a bonus, there a few aliases for web standard programs that I use.
+
+Since 1.1.0, you also have bashmarks shortcuts right away.
+Please refer to the [bashmarks documentation](https://github.com/huyng/bashmarks) for more details.
+
+In a nutshell, here is a quick memo:
+
+- l: list
+- s $name: save current dir as $name
+- g $name: cd to dir $name
+- d $name: delete dir $name (from the bashmarks list)
+
 
 
 
@@ -207,6 +218,25 @@ importconf () {
 
 
 
+Tips
+--------
+Since k installs itself wherever you currently are, a good tip that you can use if you want to create all your users
+with a default k skin is to cd to /etc/skel, and then call the k installer.
+Here is an example:
+
+
+```bash
+# (be root)
+cd /etc/skel
+source <(curl -s https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh)
+```
+
+Now, the next time you create an user, she will have the k skin right off the bat.
+
+
+
+
+
 Ideas
 ---------
 
@@ -219,6 +249,10 @@ Create a native function that copies the k dir to another user's home directory 
 History Log
 ------------------
     
+- 1.1.0 -- 2016-02-06
+
+    - add bashmarks to the default install
+        
 - 1.0.0 -- 2016-02-06
 
     - initial commit
