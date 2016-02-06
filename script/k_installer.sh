@@ -63,7 +63,7 @@ EOM
     
     
     
-    /bin/cat <<EOM >k_functions.sh
+    /bin/cat <<'EOM' >k_functions.sh
 #!/bin/bash    
 
 mcd () { mkdir -p "$1" && cd "$1"; }
@@ -76,11 +76,11 @@ importconf () {
 
 EOM
     
-    /bin/cat <<EOM >k_environment_variables.sh
+    /bin/cat <<'EOM' >k_environment_variables.sh
 #!/bin/bash
 EOM
 
-    /bin/cat <<EOM >k_sources.sh    
+    /bin/cat <<'EOM' >k_sources.sh    
 #!/bin/bash
 EOM
 
