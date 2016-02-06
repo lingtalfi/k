@@ -65,8 +65,6 @@ EOM
     
     /bin/cat <<EOM >k_functions.sh
 #!/bin/bash    
-set -euo pipefail
-IFS=$'\n\t'
 
 mcd () { mkdir -p "$1" && cd "$1"; }
 
