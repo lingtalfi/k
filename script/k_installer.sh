@@ -297,7 +297,8 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
     
     
 EOF
-            
+            # ubuntu has a default l alias that conflicts with the preferred l bashmarks alias
+            unalias l
             source ".k/k_aliases.sh"            
             source ".k/k_functions.sh"            
             source ".k/k_environment_variables.sh"            
