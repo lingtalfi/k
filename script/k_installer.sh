@@ -70,9 +70,6 @@ mcd () { mkdir -p "$1" && cd "$1"; }
 
 path () { echo $PATH | tr ':' '\n' | xargs ls -ld }
 
-importconf () { 
-    # todo: import ling's tmux or ling's git confs 
-}
 
 EOM
     
