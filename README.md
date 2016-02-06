@@ -3,7 +3,7 @@ K
 2016-02-06
 
 
-K get kool alias (and more) working with a simple one-liner. 
+K get kool aliases (and more) working with a simple one-liner. 
 
 
 Features
