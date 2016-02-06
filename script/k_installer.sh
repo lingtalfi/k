@@ -63,28 +63,24 @@ EOM
     
     
     
-    /bin/cat <<EOM >k_functions.sh
-    
+    /bin/cat <<EOM > k_functions.sh
 #!/bin/bash    
+
 mcd () { mkdir -p "$1" && cd "$1"; }
 
-path () {
-  echo $PATH | tr ':' '\n' | xargs ls -ld 
-}
+path () { echo $PATH | tr ':' '\n' | xargs ls -ld }
 
-importconf () {
-    # todo: import ling's tmux or ling's git confs
+importconf () { 
+    # todo 
 }
 
 EOM
     
-    /bin/cat <<EOM >k_environment_variables.sh
-    
+    /bin/cat <<EOM > k_environment_variables.sh
 #!/bin/bash
 EOM
 
-    /bin/cat <<EOM >k_sources.sh
-    
+    /bin/cat <<EOM > k_sources.sh    
 #!/bin/bash
 EOM
 
