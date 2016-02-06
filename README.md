@@ -89,9 +89,14 @@ content in it:
 ```bash
 . /home/ling/bin/bashmarks.sh
 ```
+But note that since 1.1.0, bashmarks is automatically included (see next section).
+
 
 
 As a bonus, there a few aliases for web standard programs that I use.
+
+
+### bashmarks
 
 Since 1.1.0, you also have bashmarks shortcuts right away.
 Please refer to the [bashmarks documentation](https://github.com/huyng/bashmarks) for more details.
@@ -103,6 +108,7 @@ In a nutshell, here is a quick memo:
 - g $name: cd to dir $name
 - d $name: delete dir $name (from the bashmarks list)
 
+The bashmarks puts its memory to your user's home/.sdirs file.
 
 
 
@@ -214,6 +220,7 @@ importconf () {
     # todo: import ling's tmux or ling's git confs
 }
 ```
+
 
 
 
