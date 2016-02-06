@@ -74,6 +74,7 @@ path () {
 
 importconf () { 
     # todo: import ling's tmux and git confs 
+    echo 
 }
 
 
