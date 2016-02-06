@@ -3,7 +3,7 @@ K
 2016-02-06
 
 
-K help you access your aliases and other personal stuff early and rapidly.
+K get kool alias (and more) working with a simple one-liner. 
 
 
 Features
