@@ -6,17 +6,23 @@
 pwd="$(pwd)"
 kDir="$pwd/.k"
 
+editor=vim
+if [ -n "$1" ]; then
+    editor="$1"
+fi
+
+override=0
+if [ -n "$2" ]; then
+    override="$2"
+fi   
+ 
+ 
 #----------------------------------------
 # We execute the script ONLY IF .k dir does not exist 
 #----------------------------------------
-if [ ! -d "$kDir" ]; then
+if [ \( ! -d "$kDir" \) -o "1" = "$override" ]; then
  
  
-    editor=vim
-    if [ -n "$1" ]; then
-        editor="$1"
-    fi
-    
     
     #----------------------------------------
     # CREATE THE STRUCTURE
@@ -57,6 +63,11 @@ alias aar='service apache2 restart'
 alias nnlog='tail -f /var/log/nginx/error.log'
 alias nnalog='tail -f /var/log/nginx/access.log'
 alias nnr='service nginx restart'
+
+alias ppini='$editor /etc/php5/apache2/php.ini'
+
+alias ffini='$editor /etc/php5/fpm/php.ini'
+alias ffr='service php5-fpm restart'
 
 alias sslog='tail -f /var/log/syslog'
 

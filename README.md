@@ -26,26 +26,16 @@ That's it.
 How to use
 ---------------
 
-Go to your home directory, then call one of the install url below
+Go to your home directory, then call the install url below
 
 ```bash
 cd
 source <(curl -s https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh)
-
-# alternative using nano as the default editor instead of vim
-curl -s https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh | bash /dev/stdin nano
-
-# alternative using open (mac) as the default editor instead of vim
-curl -s https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh | bash /dev/stdin open
-
-# wget alternative 
-bash <(wget -qO- https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh)
-
-# wget alternative using nano as the default editor instead of vim
-wget -qO- https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh | bash -s -- nano
 ```
 
 To see what this does, see the "k structure" section below.
+
+Note: If you need to, there are other ways/options for the installer, see the installer section below. 
 
 
 Then, to edit/create an alias:
@@ -250,11 +240,66 @@ Ideas
 Create a native function that copies the k dir to another user's home directory (and configure the .bashrc)
 
 
+Installer
+--------------
+
+The installer is simply a bash script that does the installation of the k program.
+
+Although it doesn't require parameters, it the installer accepts a maximum of two parameters.
+
+
+
+- the first argument is the editor used to open the files (some of the k native aliases use this editor).
+            The default is vim, but you can change it to anything you like: *nano* for instance, 
+            or even the mac specific *open* command.
+            Have a look at the examples below.  
+             
+- The second argument decide whether or not the installer should override your existing configuration.
+
+            By default, the installer checks for the existence of the **.k** directory in the current directory.
+            If the .k directory exists, the installer does nothing.
+            This is generally what we want.
+            
+            However, it is possible to tell the installer to override your current .k directory, no matter what.
+            To do so, you use the second argument, called **override** and set its value to 1.
+                         
+            Generally, this is a bad idea, but I added it for personal purposes (details are not very interesting),
+            and I wanted you to be aware of it.
+            
+            
+Here are different ways to call the installer, some examples use wget, some other use curl. 
+
+```bash
+
+# default example
+source <(curl -s https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh)
+
+
+# alternative using nano as the default editor instead of vim
+curl -s https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh | bash /dev/stdin nano
+
+# alternative using open (mac) as the default editor instead of vim
+curl -s https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh | bash /dev/stdin open
+
+# wget alternative 
+bash <(wget -qO- https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh)
+
+# wget alternative using nano as the default editor instead of vim
+wget -qO- https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installer.sh | bash -s -- nano
+
+```
+
+
 
 
 
 History Log
 ------------------
+    
+- 1.2.0 -- 2016-02-06
+
+    - add php-fpm aliases
+    - add override mechanism to force re-install
     
 - 1.1.0 -- 2016-02-06
 
