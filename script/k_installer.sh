@@ -68,6 +68,9 @@ EOM
 
 mcd () { mkdir -p "$1" && cd "$1"; }
 
+path () { echo $PATH | tr ":" "\n" | xargs ls -ld }
+
+
 EOM
     
     /bin/cat <<'EOM' >k_environment_variables.sh
