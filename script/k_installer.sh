@@ -62,6 +62,10 @@ alias sslog='tail -f /var/log/syslog'
 
 alias hhlog='tail -f /var/log/auth.log'
 
+#-------------------------------------
+# USER ALIAS
+#-------------------------------------
+
 EOM
     
     
