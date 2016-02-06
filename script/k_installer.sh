@@ -27,6 +27,9 @@ if [ \( ! -d "$kDir" \) -o "1" = "$override" ]; then
     #----------------------------------------
     # CREATE THE STRUCTURE
     #----------------------------------------
+    if [ -d "$kDir" -a "1" = "$override" ]; then 
+        rm -r "$kDir"
+    fi
     mkdir "$kDir"
     cd "$kDir"
     touch k_aliases.sh k_functions.sh k_environment_variables.sh k_sources.sh
