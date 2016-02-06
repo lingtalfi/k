@@ -3,7 +3,7 @@ K
 2016-02-06
 
 
-K is a mini framework to ease development in a terminal.
+K help you access your aliases and other personal stuff early and rapidly.
 
 
 Features
