@@ -25,8 +25,7 @@ if [ ! -d "$kDir" ]; then
     cd "$kDir"
     touch k_aliases.sh k_functions.sh k_environment_variables.sh k_sources.sh
     
-    /bin/cat <<EOM >k_aliases.sh
-    
+    /bin/cat <<EOM > k_aliases.sh
 #!/bin/bash
     
 #-------------------------------------
@@ -69,11 +68,11 @@ EOM
 #!/bin/bash    
 mcd () { mkdir -p "$1" && cd "$1"; }
 
-path(){
+path () {
   echo $PATH | tr ':' '\n' | xargs ls -ld 
 }
 
-importconf (){
+importconf () {
     # todo: import ling's tmux or ling's git confs
 }
 
@@ -101,7 +100,7 @@ EOM
 
         if ! grep -q "# kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" ".bashrc"; then
         
-            cat >>".bashrc" <<EOF
+            cat >>".bashrc" << 'EOF'
     
 # kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
 #  	 ____ 
