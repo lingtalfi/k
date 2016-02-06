@@ -70,6 +70,7 @@ alias nnr='service nginx restart'
 alias ppini='$editor /etc/php5/apache2/php.ini'
 
 alias ffini='$editor /etc/php5/fpm/php.ini'
+alias ffconf='$editor /etc/php5/fpm/pool.d/www.conf'
 alias ffr='service php5-fpm restart'
 
 alias sslog='tail -f /var/log/syslog'

@@ -296,6 +296,10 @@ wget -qO- https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installe
 History Log
 ------------------
     
+- 1.2.1 -- 2016-02-06
+
+    - add ffconf alias to edit php-fpm www.conf
+    
 - 1.2.0 -- 2016-02-06
 
     - add php-fpm aliases
