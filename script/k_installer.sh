@@ -66,6 +66,7 @@ alias aar='service apache2 restart'
 alias nnlog='tail -f /var/log/nginx/error.log'
 alias nnalog='tail -f /var/log/nginx/access.log'
 alias nnr='service nginx restart'
+alias nnconf='$editor /etc/nginx/nginx.conf'
 
 alias ppini='$editor /etc/php5/apache2/php.ini'
 

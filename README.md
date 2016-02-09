@@ -296,6 +296,10 @@ wget -qO- https://raw.githubusercontent.com/lingtalfi/k/master/script/k_installe
 History Log
 ------------------
     
+- 1.2.2 -- 2016-02-07
+
+    - add nnconf alias to edit nginx.conf
+    
 - 1.2.1 -- 2016-02-06
 
     - add ffconf alias to edit php-fpm www.conf
